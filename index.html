@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="description" content="This is a survery.">
+  <meta name="viewport" content="width=device-width, initial-scale="1.0">
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">Daily activities survey</h1>
+  <p id="description">Tell us about how motivated you are on a quotidian basis</p>
+
+  <!--  <img src="https://unsplash.com/photos/_RBcxo9AU-U?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" alt="green grass field during sunset"> -->
+
+  <div>
+    <form id="survey-form">
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label">Age: <input id="number" type="number" min="15" max="50" placeholder="Enter your age" required></label>
+
+      <label>How motivated are you?
+        <select id="dropdown" name="motivation-level">
+          <option value="">select an option</option>
+          <option value="Very">Very motivated</option>
+          <option value="somewhat-motivated">somewhat motivated</option>
+          <option value="never-motivated">never motivated</option>
+          <option value="Would-like-to-not-respond">Would like to not respond</option>
+        </select>
+      </label>
+
+      <p>Do you love to run?</p>
+      <label>
+        <input name="love-run" type="radio" value="yes"> Yes
+      </label>
+      <label>
+        <input name="love-run" type="radio" value="no"> No
+      </label>
+      <label>
+        <input name="love-run" type="radio" value="somtimes"> Somtimes
+      </label>
+
+      <p>What is your routine in the morning?</p>
+      <label><input type="checkbox" name="shower"  value="shower"> Shower</label>
+      <label><input type="checkbox" name="exercise" value="excersice"> Exercise</label>
+      <label><input type="checkbox" name="eat-breakfast"  value="eat-breakfast"> Eat Breakfast</label>
+      <label><input type="checkbox" name="read-news"  value="read-news"> Read the news</label>
+      <label><input type="checkbox" name="walk-pet"  value="walk-pet"> Walk your pet </label>
+      <label><input type="checkbox" name="travel-school"  value="travel-school"> Travel to school</label>
+      <label><input type="checkbox" name="travel-work" value="travel-work"> Travel to work</label>
+      <label>
+        Write about your favorite hobby and why you enjoy it.
+        <textarea rows="4" placeholder="My favorite hobby is..."></textarea>
+      </label>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
